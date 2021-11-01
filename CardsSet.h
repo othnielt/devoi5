@@ -1,3 +1,7 @@
+#include <cstdlib>
+#include "Card.h"
+#include <ctime>
+
 class CardsSet {
 public:
     CardsSet() : number(0) {}

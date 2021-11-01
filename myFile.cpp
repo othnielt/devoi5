@@ -1,11 +1,7 @@
 
 #include <iostream>
 using namespace std;
-
 #include "myFile.h"
-#include "Card.h"
-#include "CardsSet.h"
-#include "Player.h"
 
 int main() {
 	CardsSet packet;

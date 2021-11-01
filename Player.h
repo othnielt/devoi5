@@ -1,3 +1,4 @@
+#include "CardsSet.h"
 class Player {
 public:
     Player(CardsSet& cardPacket, bool isComputer) : packet(cardPacket), computer

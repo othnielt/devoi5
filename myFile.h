@@ -1,7 +1,7 @@
 #include <cstdlib>
-#include <Card.h>
+#include "Player.h"
 #include <ctime>
-#include <cassert>
+
 
  // question 1
 
@@ -61,7 +61,7 @@ void CardsSet::shuffle() {
 
 	for (int i = 0; i < 52; i++) {
 		int randomNumber = i + (rand() % (number - i));
-		swap(set[i], set[p]);
+		swap(set[i], set[randomNumber]);
 	}
 }
 
@@ -121,12 +121,12 @@ int Player::play() {
 	if (!computer) {
 
 		
-		cout << "Current player is " << endl;
+		cout << "your turn to play" << endl;
 	
 	}
 	else {
 		
-		cout << "Current player is computer: " << endl;
+		cout << " computer turn : " << endl;
 		
 	}
 
@@ -140,9 +140,9 @@ int Player::play() {
 
 		cout << "Do you want another card?" << endl;
 
-		cin >> answer;
+		cin >> reponse;
 
-		joueur = (reponse[0] == 'y');
+		joueur = (reponse[0] ==  'y');
 	}
 
 	return countPoints();
